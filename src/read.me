@@ -1,0 +1,40 @@
+{/* <p>today date {todaysDate}</p> */}
+{data.map((element) => {
+  if (
+    calculateAge(element.dateOfBirth).months == 0 &&
+    calculateAge(element.dateOfBirth).days == 0
+  ) {
+    return (
+      <>
+        <h2> today is you birth day</h2>
+        <div
+          style={{
+            border: "1px solid black",
+            margin: "10px",
+
+          }}
+        >
+          <h1>{element.name}</h1>
+          <p>{calculateAge(element.dateOfBirth).years}</p>
+          <p>{element.gender}</p>
+        </div>
+      </>
+    );
+  } else {
+    return (
+      <div
+        style={{
+          border: "1px solid black",
+          margin: "10px",
+
+        }}
+      >
+        <p> you birthday is comming soon</p>
+        <h1>{element.name}</h1>
+        <p>{calculateAge(element.dateOfBirth).months}</p>
+        <p>{calculateAge(element.dateOfBirth).days}</p>
+        <p>{element.gender}</p>
+      </div>
+    );
+  }
+})}

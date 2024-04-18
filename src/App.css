@@ -1,0 +1,48 @@
+body {
+  background-color: rgb(252, 246, 238);
+  text-align: center; /* Align all elements in the center horizontally */
+}
+
+.birthday{
+  border:0px solid black;
+  margin-top:10px;
+  border-radius:15px;
+  display:flex;
+  flex-direction:column;
+  justify-content: center;
+  background-color:rgb(252,213,215);
+  width:40vw;
+  padding:20px;
+  margin-left: auto; 
+  margin-right: auto; 
+}
+.birthday:hover{
+  background-color:rgb(253,232,230);
+}
+
+.birthday span{
+  background-color:rgb(220,111,144);
+  padding:5px;
+  border-radius:6px
+}
+
+.center-container {
+  display: flex;
+  justify-content: center;
+}
+
+.upcoming-birthday {
+  border: 0px solid black;
+  margin-top: 10px;
+  border-radius: 15px;
+  background-color: rgb(200, 240, 192);
+  padding: 20px;
+  width: 40vw;
+  margin-left: auto; 
+  margin-right: auto; 
+}
+
+
+.upcoming-birthday:hover{
+  background-color:rgb(229,245,219)
+}
